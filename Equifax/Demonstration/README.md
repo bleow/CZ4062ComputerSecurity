@@ -10,6 +10,8 @@ For more informations, see [https://cwiki.apache.org/confluence/display/WW/S2-04
 
 `docker-compose up`
 
+If you made changes to the docker, run `docker-compose up --build` instead
+
 2. Run the python exploit script from the attacker machine :
 
 `python exploit.py http://localhost:8080/hello "ls -l"`

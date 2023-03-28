@@ -2,9 +2,9 @@
 <html>
 
 <body>
-	<h1>Vulnerable Struts Apps</h1>
+	<h1>CZ4062 Computer Security | Bryan, Boon Yen, Deming, Sean</h1>
 	<br>
-		Hello world !
+		Hello prof
 	<br>
 </body>
 </html>

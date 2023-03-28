@@ -1,6 +1,7 @@
 version: '3'
 services:
-  cz4062-hack:
+  cve-2017-5638:
+    image: cve-2017-5638
     build: .
     ports:
       - "8080:8080"
