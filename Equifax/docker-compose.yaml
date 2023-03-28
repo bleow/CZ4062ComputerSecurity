@@ -1,6 +1,6 @@
 version: '3'
 services:
-  cz4067-hack:
+  cz4062-hack:
     build: .
     ports:
       - "8080:8080"
