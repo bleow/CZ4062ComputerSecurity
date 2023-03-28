@@ -21,27 +21,22 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package com.github.jrrdev;
+package com.cz4062.struts;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.stereotype.Component;
 
-/**
- * Entry point for the application.
- *
- * @author jrrdev
- *
- */
-@SpringBootApplication
-public class Application {
+import com.opensymphony.xwork2.ActionSupport;
+
+@Component
+public class HelloWorldAction extends ActionSupport {
 
 	/**
-	 * Entry point method.
-	 *
-	 * @param args
-	 * 			Command line arguments
+	 * Serial Version UID.
 	 */
-	public static void main(final String[] args) {
-		SpringApplication.run(Application.class, args);
+	private static final long serialVersionUID = -3040983642542454121L;
+
+	public String display() {
+		return NONE;
 	}
+
 }

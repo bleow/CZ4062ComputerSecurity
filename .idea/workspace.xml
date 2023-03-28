@@ -4,26 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81f019e7-fc79-4759-8756-49e08a1e31b8" name="Changes" comment="fix: fixed breakpoints and project organisation">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javassist_javassist_3_11_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_xwork_xwork_core_2_3_31.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Equifax/Demonstration/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CZ4062ComputerSecurity.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CZ4062ComputerSecurity.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_struts2_core_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_struts2_core_2_3_31.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_struts2_spring_plugin_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_struts2_spring_plugin_2_3_31.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" beforeDir="false" />
+    <list default="true" id="81f019e7-fc79-4759-8756-49e08a1e31b8" name="Changes" comment="fix: change version number of struts to correct version for vulnerability showcase (note: this breaks our breakpoints, to fix l8r)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equifax/Demonstration/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Equifax/Demonstration/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equifax/Demonstration/cve-2017-5638-example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Equifax/Demonstration/cve-2017-5638-example.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equifax/Demonstration/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Equifax/Demonstration/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equifax/Demonstration/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Equifax/Demonstration/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equifax/Demonstration/src/main/java/com/github/jrrdev/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/Equifax/Demonstration/src/main/java/com/github/jrrdev/AppConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equifax/Demonstration/src/main/resources/META-INF/resources/pages/helloworld.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Equifax/Demonstration/src/main/resources/META-INF/resources/pages/helloworld.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Equifax/Demonstration/src/main/java/com/github/jrrdev/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/Equifax/Demonstration/src/main/java/com/cz4062/struts/AppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Equifax/Demonstration/src/main/java/com/github/jrrdev/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/Equifax/Demonstration/src/main/java/com/cz4062/struts/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Equifax/Demonstration/src/main/java/com/github/jrrdev/HelloWorldAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Equifax/Demonstration/src/main/java/com/cz4062/struts/HelloWorldAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Equifax/Demonstration/src/main/resources/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Equifax/Demonstration/src/main/resources/struts.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +177,7 @@
       <updated>1679991617589</updated>
       <workItem from="1679991617592" duration="6670000" />
       <workItem from="1680025196973" duration="3182000" />
-      <workItem from="1680028471474" duration="389000" />
+      <workItem from="1680028471474" duration="708000" />
     </task>
     <task id="LOCAL-00001" summary="feat: breakpoint tracing">
       <created>1679992685514</created>
@@ -228,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680025803306</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix: change version number of struts to correct version for vulnerability showcase (note: this breaks our breakpoints, to fix l8r)">
+      <created>1680029021786</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680029021786</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,14 +244,15 @@
     <MESSAGE value="feat: etc/passwd exploit demo" />
     <MESSAGE value="feat: add another directory for official struts source code" />
     <MESSAGE value="fix: fixed breakpoints and project organisation" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: fixed breakpoints and project organisation" />
+    <MESSAGE value="fix: change version number of struts to correct version for vulnerability showcase (note: this breaks our breakpoints, to fix l8r)" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: change version number of struts to correct version for vulnerability showcase (note: this breaks our breakpoints, to fix l8r)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <option name="description" value="1" />
-          <url>file://$PROJECT_DIR$/Equifax/Demonstration/src/main/java/com/github/jrrdev/AppConfiguration.java</url>
+          <url>file://$PROJECT_DIR$/Equifax/Demonstration/src/main/java/com/cz4062/struts/AppConfiguration.java</url>
           <line>36</line>
           <option name="timeStamp" value="17" />
           <description>1</description>

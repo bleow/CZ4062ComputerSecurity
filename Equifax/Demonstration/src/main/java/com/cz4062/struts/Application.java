@@ -21,22 +21,27 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package com.github.jrrdev;
+package com.cz4062.struts;;
 
-import org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter;
-import org.springframework.boot.context.embedded.FilterRegistrationBean;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@Configuration
-public class AppConfiguration {
+/**
+ * Entry point for the application.
+ *
+ * @author jrrdev
+ *
+ */
+@SpringBootApplication
+public class Application {
 
-	@Bean
-	public FilterRegistrationBean filterRegistrationBean() {
-		final FilterRegistrationBean registrationBean = new FilterRegistrationBean();
-		final StrutsPrepareAndExecuteFilter struts = new StrutsPrepareAndExecuteFilter();
-		registrationBean.setFilter(struts);
-		registrationBean.setOrder(1);
-		return registrationBean;
+	/**
+	 * Entry point method.
+	 *
+	 * @param args
+	 * 			Command line arguments
+	 */
+	public static void main(final String[] args) {
+		SpringApplication.run(Application.class, args);
 	}
 }

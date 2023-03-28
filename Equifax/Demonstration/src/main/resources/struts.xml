@@ -10,7 +10,7 @@
  	
 	<package name="default" namespace="/" extends="struts-default">
 		
-		<action name="*" class="com.github.jrrdev.HelloWorldAction" method="display">
+		<action name="*" class="com.cz4062.struts.HelloWorldAction" method="display">
 			<result name="none">pages/helloworld.jsp</result>
 		</action>
 	</package>

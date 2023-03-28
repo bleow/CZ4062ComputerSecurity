@@ -21,22 +21,22 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package com.github.jrrdev;
+package com.cz4062.struts;
 
-import org.springframework.stereotype.Component;
+import org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter;
+import org.springframework.boot.context.embedded.FilterRegistrationBean;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
-import com.opensymphony.xwork2.ActionSupport;
+@Configuration
+public class AppConfiguration {
 
-@Component
-public class HelloWorldAction extends ActionSupport {
-
-	/**
-	 * Serial Version UID.
-	 */
-	private static final long serialVersionUID = -3040983642542454121L;
-
-	public String display() {
-		return NONE;
+	@Bean
+	public FilterRegistrationBean filterRegistrationBean() {
+		final FilterRegistrationBean registrationBean = new FilterRegistrationBean();
+		final StrutsPrepareAndExecuteFilter struts = new StrutsPrepareAndExecuteFilter();
+		registrationBean.setFilter(struts);
+		registrationBean.setOrder(1);
+		return registrationBean;
 	}
-
 }
