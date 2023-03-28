@@ -9,5 +9,8 @@
         <module name="cve-2017-5638-example" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cve-2017-5638-example" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

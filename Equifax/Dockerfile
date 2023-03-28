@@ -6,7 +6,7 @@ RUN mkdir -p /cve-2017-538/exploit && \
 ADD ./pom.xml /usr/src/cve-2017-538/pom.xml
 ADD ./src /usr/src/cve-2017-538/src
 ADD ./docker/entry-point.sh /cve-2017-538/entry-point.sh
-ADD ./exploit/exploit.py /cve-2017-538/exploit/exploit.py
+ADD ./exploit.py /cve-2017-538/exploit/exploit.py
 
 
 RUN chmod +x /cve-2017-538/entry-point.sh && \
