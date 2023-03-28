@@ -1,25 +1,33 @@
+# base image with maven and jdk
 FROM maven:3-jdk-8-alpine
 
-RUN mkdir -p /cve-2017-538/exploit && \
-	mkdir -p /usr/src/cve-2017-538
+# scaffolding. cve-2017-5638 will contain our files needed, temp will be a temporary folder to build our app
+RUN mkdir -p /cve-2017-5638/exploit && \
+	mkdir -p /temp && \
+    mkdir -p /cve-2017-5638/etc
 
-ADD ./pom.xml /usr/src/cve-2017-538/pom.xml
-ADD ./src /usr/src/cve-2017-538/src
-ADD ./docker/entry-point.sh /cve-2017-538/entry-point.sh
-ADD ./exploit.py /cve-2017-538/exploit/exploit.py
+ADD ./pom.xml               /temp/pom.xml
+ADD ./src                   /temp/src
+ADD ./docker/entry-point.sh /cve-2017-5638/entry-point.sh
+ADD ./exploit.py            /cve-2017-5638/exploit/exploit.py
+ADD ./etc/passwd.txt        /cve-2017-5638/etc/passwd
 
-
-RUN chmod +x /cve-2017-538/entry-point.sh && \
+# make entry-point.sh executable
+    # synchronise the file system buffers
+    # enter temp and package the app into a .jar
+    # move the .jar file to our main cve-2017-5638
+    # delete our temp folder
+RUN chmod +x /cve-2017-5638/entry-point.sh && \
 	sync && \
-	cd /usr/src/cve-2017-538 && \
+	cd /temp && \
 	mvn package && \
-	cp /usr/src/cve-2017-538/target/*.jar /cve-2017-538/cve-2017-538-example.jar && \
-	rm -Rf /usr/src/cve-2017-538
+	cp /temp/target/*.jar /cve-2017-5638/cve-2017-5638-example.jar && \
+	rm -Rf /temp
 
-WORKDIR /cve-2017-538
+WORKDIR /cve-2017-5638
 
 ENTRYPOINT ["./entry-point.sh"]
 
 EXPOSE 8080
 
-VOLUME ["/cve-2017-538/exploit/"]
+VOLUME ["/cve-2017-5638/exploit/"]

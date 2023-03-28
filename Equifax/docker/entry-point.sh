@@ -2,4 +2,4 @@
 
 set -e
 
-exec java "$@" -jar /cve-2017-538/cve-2017-538-example.jar
+exec java "$@" -jar /cve-2017-5638/cve-2017-5638-example.jar
