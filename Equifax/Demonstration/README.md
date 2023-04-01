@@ -15,3 +15,6 @@ If you made changes to the docker, run `docker-compose up --build` instead
 2. Run the python exploit script from the attacker machine :
 
 `python exploit.py http://localhost:8080/hello "ls -l"`
+
+3. In the case where you encounter an error that your entry-point.sh can't be located
+refer to this: https://stackoverflow.com/questions/38905135/why-wont-my-docker-entrypoint-sh-execute
