@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CZ4062ComputerSecurity.iml" filepath="$PROJECT_DIR$/.idea/CZ4062ComputerSecurity.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Equifax/Demonstration/cve-2017-5638-example.iml" filepath="$PROJECT_DIR$/Equifax/Demonstration/cve-2017-5638-example.iml" />
     </modules>
   </component>
 </project>

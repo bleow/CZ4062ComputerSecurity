@@ -10,7 +10,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="cve-2017-5638-example" target="1.8" />
+      <module name="demonstrations" target="19" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demonstrations" options="-parameters" />
+    </option>
   </component>
 </project>
