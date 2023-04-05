@@ -1,4 +1,4 @@
-package fr.christophetd.log4shell.vulnerableapp;
+package com.cz4062.log4j;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,8 +13,9 @@ public class MainController {
 
     private static final Logger logger = LogManager.getLogger("HelloWorld");
 
-    @GetMapping("/")
+    @GetMapping("/hi")
     public String index(@RequestHeader("X-Api-Version") String apiVersion) {
+        logger.info("HELLO");
         logger.info("Received a request for API version " + apiVersion);
         return "Hello, world!";
     }
