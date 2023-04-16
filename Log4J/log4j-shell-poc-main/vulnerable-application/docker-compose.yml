@@ -1,0 +1,7 @@
+version: '3'
+services:
+  fuckthis:
+    image: fuckthis
+    build: .
+    ports:
+      - "8080:8080"

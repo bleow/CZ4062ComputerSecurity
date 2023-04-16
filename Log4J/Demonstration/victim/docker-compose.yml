@@ -1,7 +1,7 @@
 version: '3'
 services:
   cve-2017-5638:
-    image: cve-2021-44228
+    image: cve-2017-5638
     build: .
     ports:
       - "8080:8080"

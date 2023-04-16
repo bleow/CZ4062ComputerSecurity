@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="log4shell:war">
+    <output-path>$PROJECT_DIR$/vulnerable-application/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>log4shell</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="log4shell-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="log4shell:war exploded" />
+    </root>
+  </artifact>
+</component>

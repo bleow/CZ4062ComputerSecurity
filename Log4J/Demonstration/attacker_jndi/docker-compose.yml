@@ -1,0 +1,7 @@
+version: '3'
+services:
+  cve-2021-44228:
+    image: cve-2021-44228
+    build: .
+    ports:
+      - "8888:8888"
